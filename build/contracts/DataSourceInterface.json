@@ -1,0 +1,1057 @@
+{
+  "contractName": "DataSourceInterface",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isDataSource",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "matchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGroupResult",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRoundOfSixteenTeams",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "matchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getRoundOfSixteenResult",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "matchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getQuarterResult",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "matchId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSemiResult",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getFinalTeams",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getYellowCards",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getRedCards",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "pragma solidity ^0.4.24;\r\n\r\n\r\ncontract DataSourceInterface {\r\n\r\n    function isDataSource() public pure returns (bool);\r\n\r\n    function getGroupResult(uint matchId) external;\r\n    function getRoundOfSixteenTeams(uint index) external;\r\n    function getRoundOfSixteenResult(uint matchId) external;\r\n    function getQuarterResult(uint matchId) external;\r\n    function getSemiResult(uint matchId) external;\r\n    function getFinalTeams() external;\r\n    function getYellowCards() external;\r\n    function getRedCards() external;\r\n\r\n}\r\n",
+  "sourcePath": "C:\\Users\\Athira\\Desktop\\ERC721\\contracts\\DataSourceInterface.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Athira/Desktop/ERC721/contracts/DataSourceInterface.sol",
+    "exportedSymbols": {
+      "DataSourceInterface": [
+        363
+      ]
+    },
+    "id": 364,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 323,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 363,
+        "linearizedBaseContracts": [
+          363
+        ],
+        "name": "DataSourceInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 328,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isDataSource",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 324,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "89:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 327,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 326,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 328,
+                  "src": "113:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 325,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "112:6:2"
+            },
+            "scope": 363,
+            "src": "68:51:2",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 333,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getGroupResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 330,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 333,
+                  "src": "151:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 329,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "150:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "173:0:2"
+            },
+            "scope": 363,
+            "src": "127:47:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 338,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRoundOfSixteenTeams",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 336,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 335,
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 338,
+                  "src": "212:10:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 334,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:12:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:2"
+            },
+            "scope": 363,
+            "src": "180:53:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 343,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRoundOfSixteenResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 340,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 343,
+                  "src": "272:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 339,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "294:0:2"
+            },
+            "scope": 363,
+            "src": "239:56:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 348,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getQuarterResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 346,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 345,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 348,
+                  "src": "327:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 344,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "327:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "326:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 347,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "349:0:2"
+            },
+            "scope": 363,
+            "src": "301:49:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 353,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getSemiResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 351,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 350,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 353,
+                  "src": "379:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 349,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "379:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "378:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 352,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:0:2"
+            },
+            "scope": 363,
+            "src": "356:46:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 356,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getFinalTeams",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "430:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 355,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:0:2"
+            },
+            "scope": 363,
+            "src": "408:34:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 359,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getYellowCards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 357,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "471:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:0:2"
+            },
+            "scope": 363,
+            "src": "448:35:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 362,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRedCards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 360,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "509:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 361,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "520:0:2"
+            },
+            "scope": 363,
+            "src": "489:32:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 364,
+        "src": "30:496:2"
+      }
+    ],
+    "src": "0:528:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Athira/Desktop/ERC721/contracts/DataSourceInterface.sol",
+    "exportedSymbols": {
+      "DataSourceInterface": [
+        363
+      ]
+    },
+    "id": 364,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 323,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 363,
+        "linearizedBaseContracts": [
+          363
+        ],
+        "name": "DataSourceInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": null,
+            "documentation": null,
+            "id": 328,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "isDataSource",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 324,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "89:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 327,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 326,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 328,
+                  "src": "113:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 325,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "112:6:2"
+            },
+            "scope": 363,
+            "src": "68:51:2",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 333,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getGroupResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 330,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 333,
+                  "src": "151:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 329,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "150:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "173:0:2"
+            },
+            "scope": 363,
+            "src": "127:47:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 338,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRoundOfSixteenTeams",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 336,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 335,
+                  "name": "index",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 338,
+                  "src": "212:10:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 334,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "212:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "211:12:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 337,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "232:0:2"
+            },
+            "scope": 363,
+            "src": "180:53:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 343,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRoundOfSixteenResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 341,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 340,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 343,
+                  "src": "272:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 339,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 342,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "294:0:2"
+            },
+            "scope": 363,
+            "src": "239:56:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 348,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getQuarterResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 346,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 345,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 348,
+                  "src": "327:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 344,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "327:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "326:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 347,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "349:0:2"
+            },
+            "scope": 363,
+            "src": "301:49:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 353,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getSemiResult",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 351,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 350,
+                  "name": "matchId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 353,
+                  "src": "379:12:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 349,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "379:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "378:14:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 352,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:0:2"
+            },
+            "scope": 363,
+            "src": "356:46:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 356,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getFinalTeams",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "430:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 355,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:0:2"
+            },
+            "scope": 363,
+            "src": "408:34:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 359,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getYellowCards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 357,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "471:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "482:0:2"
+            },
+            "scope": 363,
+            "src": "448:35:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 362,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "getRedCards",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 360,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "509:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 361,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "520:0:2"
+            },
+            "scope": 363,
+            "src": "489:32:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 364,
+        "src": "30:496:2"
+      }
+    ],
+    "src": "0:528:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-09-11T15:55:25.497Z"
+}

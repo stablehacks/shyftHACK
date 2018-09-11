@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello World DApp</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="index.js"></script>
+<body class="container">
+  <h1> ERC721 Game </h1>
+  <div id="address"></div>
+  <div class="table-responsive" style="display: flex;flex-direction:column">
+    <div id="msg"></div>
+
+ <div> <label>Behaviour:</label><input type="text" id="_type" /></div>
+  <div> <label>Evidence:</label><input type="text" id="_title" /></div>
+  <div> <label>Description:</label><input type="text" id="_description"/></div>
+  
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Please Select Address</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#id1"> 0x136ef65b41ebc09fe3906b4cb3615bef32b600f2</a>
+        <a href="#id2">About</a>
+        
+      </div>
+    </div>
+    <div class="dropdown2" style="margin-top: 10px">
+      <button onclick="myFunction2()" class="dropbtn">Please Select Behaviour</button>
+        <div id="myDropdown2" class="dropdown-content">
+          <a id="#id3"> Scamming</a>
+          <a id="#id4">Trolling</a>
+          <a id="#id5">Swearing</a>
+          <a id="#id6">Helping a </a>
+          <a id="#id7">Giving away items</a>
+          <a ="#id8">Group </a>
+        </div>
+    
+</div>
+</div>
+<a href="#" onclick="buyToken(_type,_title,_description)" class="btn btn-primary"style="margin-top:5px">box</a>
+
+
+   
+      <select id="dropdownList" onclick="test()">
+ </select>
+ 
+  </div>
+
+<style>
+  .dropbtn {
+      background-color: #3498DB;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #2980B9;
+  }
+  
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+  
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  </style>
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+  var  array = ["Scamming","Swearing","Trolling","Helping newbe","Give away items","group qwesting"];
+function test()
+{
+
+array.sort(function(val1, val2) {
+  return val1.localeCompare(val2);
+});
+
+var select = document.getElementById("dropdownList");
+for (var i = 0; i < array.length; i++) {
+ 
+  select.innerHTML += '<option>' + array[i] + '</option>';
+
+}
+}
+    
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function myFunction2() {
+        document.getElementById("myDropdown2").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+    
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
